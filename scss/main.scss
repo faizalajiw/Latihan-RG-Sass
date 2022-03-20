@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
+
 header {
     position: relative;
     background-color: black;
@@ -5,6 +7,7 @@ header {
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
+    font-family: 'Fredoka', sans-serif;
 
     .video {
         position: absolute;
