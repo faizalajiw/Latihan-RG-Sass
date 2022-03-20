@@ -32,31 +32,15 @@ header .overlay {
   z-index: 1;
 }
 
-@media (min-aspect-ratio: 16 / 9) {
-  header .video {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-aspect-ratio: 16 / 9) {
+/* Untuk mobile responsive */
+@media (max-width: 1024px) {
   header .video {
     width: auto;
     height: 100%;
   }
 }
 
-@media (max-width: 767px) {
-  header {
-    background: url("/img/banner.jpg");
-    background-size: cover;
-  }
-  header .video {
-    display: none;
-  }
-}
-
-/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+/* Jika browser tidak support HTML5 */
 @media (pointer: coarse) and (hover: none) {
   header {
     background: url("/img/banner.jpg") black no-repeat center center scroll;
