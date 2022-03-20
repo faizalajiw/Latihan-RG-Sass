@@ -46,6 +46,9 @@ header .overlay {
 @media (pointer: coarse) and (hover: none) {
   header {
     background: url("/img/banner.jpg") black no-repeat center center scroll;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
   }
   header .video {
     display: none;
