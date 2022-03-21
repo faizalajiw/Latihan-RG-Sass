@@ -46,7 +46,7 @@ header {
   
   /* Jika browser tidak support HTML5 */
   
-  @media (pointer: coarse) and (hover: none) {
+  @media (max-width: 768px) {
     header {
         background: url('/img/banner.jpg') black no-repeat center center scroll;
         background-size: cover;
