@@ -23,6 +23,11 @@ header .container {
   z-index: 2;
 }
 
+header .container .animate__animated {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
 header .overlay {
   position: absolute;
   top: 0;
