@@ -22,9 +22,10 @@ header {
     .container {
         position: relative;
         z-index: 2;
-        
+
         .animate__animated{
-            animation-duration: 10s;
+            animation-duration: 15s;
+            animation-delay: 1s;
         }
     }
 
