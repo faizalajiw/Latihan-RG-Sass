@@ -43,18 +43,3 @@ header {
           height: 100%;
       }
   }
-  
-  /* Jika browser tidak support HTML5 */
-  
-//   @media (max-width: 768px) {
-//     header {
-//         background: url('/img/banner.jpg') black no-repeat center center scroll;
-//         background-size: cover;
-//         background-position: center;
-//         height: 100vh;
-//     }
-  
-//     header .video {
-//         display: none;
-//     }
-//   }
