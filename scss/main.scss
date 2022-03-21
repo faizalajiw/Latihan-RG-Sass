@@ -13,6 +13,11 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .animate__animated{
+            animation-duration: 15s;
+            animation-delay: 1s;
+        }
     }
 }
 
@@ -55,6 +60,27 @@ section {
         .card-image3{
             grid-area: image;
             background: url('/img/men3.jpg');
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-size: cover;
+        }
+        .card-image4{
+            grid-area: image;
+            background: url('/img/women1.jpg');
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-size: cover;
+        }
+        .card-image5{
+            grid-area: image;
+            background: url('/img/women2.jpg');
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            background-size: cover;
+        }
+        .card-image6{
+            grid-area: image;
+            background: url('/img/women3.jpg');
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             background-size: cover;
