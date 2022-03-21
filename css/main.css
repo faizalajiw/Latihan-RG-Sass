@@ -1,44 +1,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap");
-header {
-  position: relative;
-  background-color: black;
+header .banner {
   height: 100vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
-  font-family: 'Fredoka', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/about.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/about.jpeg");
+  background-size: cover;
 }
 
-header .video {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  width: 100%;
-  height: auto;
-  z-index: 0;
-}
-
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header .container .animate__animated {
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+header .banner-content {
   height: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
   width: 100%;
-  background-color: #000;
-  opacity: 0.5;
-  z-index: 1;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #242424;
+  overflow: hidden;
+}
+
+section .card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px;
+      grid-template-columns: 300px;
+  -ms-grid-rows: 200px 200px;
+      grid-template-rows: 200px 200px;
+      grid-template-areas: "image" "text";
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  cursor: pointer;
+  margin: 30px;
+}
+
+section .card .card-image1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+  background: url("/img/men1.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+section .card .card-image2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+  background: url("/img/men2.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+section .card .card-image3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+  background: url("/img/men3.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+section .card .card-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+  margin: 30px;
+}
+
+section .card .card-text .venue {
+  color: #b40069;
+  font-size: 15px;
+}
+
+section .card .card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+
+section .card .card-text p {
+  color: grey;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+section .card .card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 /* Untuk mobile responsive */
