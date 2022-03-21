@@ -149,13 +149,6 @@ section .card .card:hover {
 }
 
 /* Untuk mobile responsive */
-@media (max-width: 1024px) {
-  header .video {
-    width: auto;
-    height: 100%;
-  }
-}
-
 /* Scroll Bar */
 ::-webkit-scrollbar {
   width: .60rem;
